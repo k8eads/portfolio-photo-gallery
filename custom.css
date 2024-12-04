@@ -1,0 +1,33 @@
+body {
+    background-color: #151515;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding-bottom: .5em;
+    border-bottom: 4px white solid;
+    font-size: 120%;
+}
+nav div {
+    flex-grow: 1;
+    font-size: 2em;
+}
+nav a {
+    margin-right: 2em;
+}
+nav a:last-of-type {
+    margin-right: 0;
+}
+img {
+    width: 100%;
+    height: auto;
+}
+/* https://www.smashingmagazine.com/native-css-masonry-layout-css-grid/ */
+/* https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_grid_layout/Masonry_layout */
+main.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    gap: .5em;
+}
