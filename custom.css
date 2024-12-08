@@ -1,6 +1,9 @@
 body {
     background-color: #151515;
+    max-width: 1660px;
 }
+
+
 nav {
     display: flex;
     justify-content: space-between;
@@ -9,25 +12,59 @@ nav {
     border-bottom: 4px white solid;
     font-size: 120%;
 }
+
 nav div {
     flex-grow: 1;
     font-size: 2em;
 }
 nav a {
-    margin-right: 2em;
+    margin-right: 4em;
 }
+
 nav a:last-of-type {
     margin-right: 0;
 }
+
+.link {
+    color: white;
+}
+
+.linka{
+    color: #00AFB5; 
+}
+
 img {
     width: 100%;
     height: auto;
 }
-/* https://www.smashingmagazine.com/native-css-masonry-layout-css-grid/ */
-/* https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_grid_layout/Masonry_layout */
-main.grid {
+
+.masonry {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto;
     gap: .5em;
 }
+
+.item {
+    padding: 10px;
+}
+.item__desc{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    color:darkcyan; 
+    visibility: hidden; 
+    opacity: 0;
+
+    transition: visibility .2s; 
+}
+
+.item:hover .item__desc {
+    visibility: visible; 
+    opacity: 1; 
+}
+
+.iteml {grid-row: span 15;}
+.itemp {grid-row: span 25;}
