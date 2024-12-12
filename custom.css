@@ -47,6 +47,7 @@ img {
 
 .item {
     padding: 10px;
+    position:relative;
 }
 .item__desc{
     position: absolute;
