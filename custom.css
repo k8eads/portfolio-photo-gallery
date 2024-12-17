@@ -33,7 +33,46 @@ nav a:last-of-type {
     color: #00AFB5; 
 }
 
+
+
 img {
+    max-width: 100%;
+    display: block;
+  }
+  
+  figure {
+    margin: 0;
+    display: grid;
+    grid-template-rows: 1fr auto;
+    margin-bottom: 10px;
+    break-inside: avoid;
+  }
+  
+  figure > img {
+    grid-row: 1 / -1;
+    grid-column: 1;
+  }
+  
+  figure a {
+    color: black;
+    text-decoration: none;
+  }
+  
+  figcaption {
+    grid-row: 2;
+    grid-column: 1;
+    background-color: rgba(255,255,255,.5);
+    padding: .2em .5em;
+    justify-self: start;
+  }
+  
+  .container {
+    column-count: 4;
+    column-gap: 10px;
+  }
+
+
+/* img {
     width: 100%;
     height: auto;
     position: relative;
@@ -46,22 +85,22 @@ img {
     gap: .5em;
 }
 
+
 .item {
     padding: 10px;
     position:relative;
 }
+
 .item__desc{
     position: absolute;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
-    color:darkcyan; 
+    color:white; 
     visibility: hidden; 
     opacity: 0;
     padding-left: 15px;
-
-
     transition: visibility .2s; 
 }
 
@@ -71,4 +110,4 @@ img {
 }
 
 .iteml {grid-row: span 15;}
-.itemp {grid-row: span 25;}
+.itemp {grid-row: span 25;} 
