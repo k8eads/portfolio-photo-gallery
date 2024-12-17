@@ -36,6 +36,7 @@ nav a:last-of-type {
 img {
     width: 100%;
     height: auto;
+    position: relative;
 }
 
 .masonry {
@@ -58,6 +59,8 @@ img {
     color:darkcyan; 
     visibility: hidden; 
     opacity: 0;
+    padding-left: 15px;
+
 
     transition: visibility .2s; 
 }
